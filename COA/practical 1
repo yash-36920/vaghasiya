@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+int n,binary=0,place=1;
+printf("enter the decimal number");
+scanf("%d",&n);
+if(n=0)
+{
+printf("binary :0");
+return 0;}
+while(n>0)
+{
+int reminder =n%2;
+binary+= reminder*place;
+n /=2;
+place *=10;
+}
+printf(binary,"%d");
+return 0;
+}
